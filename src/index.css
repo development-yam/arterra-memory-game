@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black select-none overflow-hidden;
+}
+
+._x-center {
+  @apply absolute left-[50%] translate-x-[-50%];
+}
+
+._y-center {
+  @apply absolute top-[50%] translate-y-[-50%];
+}
+
+._center-center {
+  @apply absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%];
+}

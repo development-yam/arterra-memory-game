@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('../assets/fonts/NunitoSans-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Bell Slim';
+  src: url('../assets/fonts/BellSlim-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Bell Slim';
+  src: url('../assets/fonts/BellSlim-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Bell Slim';
+  src: url('../assets/fonts/BellSlim-Bold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Bell Slim';
+  src: url('../assets/fonts/BellSlim-SemiBold.ttf');
+  font-weight: 600;
+}
+
+body {
+  font-family: 'Bell Slim', sans-serif;
+  color: white;
+  background: #3C4A3A;
+}
+
+img {
+  object-fit: cover;
+}
+
+._black-gradient {
+  background: linear-gradient(0deg, #000000 0%, #666666 100%);
+}
+
+.game {
+  &-table {
+    &-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 197px);
+      grid-template-rows: repeat(2, 263px);
+      gap: 20px;
+      justify-content: center;
+
+      .card-content {
+        width: 197px;
+        height: 263px;
+      }
+    }
+
+    &-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 197px);
+      grid-template-rows: repeat(4, 263px);
+      justify-content: center;
+      gap: 30px;
+      
+      .card-content {
+        width: 197px;
+        height: 263px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    &-6 {
+      display: grid;
+      grid-template-columns: repeat(6, 197px);
+      grid-template-rows: repeat(6, 263px);
+      gap: 30px;
+      justify-content: center;
+
+      .card-content {
+        width: 197px;
+        height: 263px;
+      }
+    }
+
+    &-8 {
+      display: grid;
+      grid-template-columns: repeat(8, 197px);
+      grid-template-rows: repeat(8, 263px);
+      gap: 20px;
+      justify-content: center;
+
+      .card-content {
+        width: 197px;
+        height: 263px;
+      }
+    }
+  }
+
+  &-card {
+    display: flex;
+    justify-content: center;
+    perspective: 500px;
+
+    .card-content {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s linear;
+      transform-style: preserve-3d;
+      cursor: pointer;
+
+      .card-back img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &.flip .card-content {
+      transform: rotateY(180deg);
+    }
+
+    .card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backface-visibility: hidden;
+      z-index: 10;
+      overflow: hidden;
+    }
+
+    .hidden-card {
+      fill: #000;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+      z-index: 10;
+      overflow: hidden;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+
+  .card-back {
+    fill: #000;
+  }
+
+  .hidden-card {
+    display: none;
+  }
+
+  &.flip {
+    transform: rotateY(180deg);
+
+    .card-back {
+      fill: #282a35;
+    }
+
+    .hidden-card {
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+/* Custom keyboard style */
+.hg-theme-default {
+  background-color: transparent !important;
+}
+
+.hg-theme-default .hg-button {
+  color: #222;
+  background: white !important;
+  padding: 2rem !important;
+  aspect-ratio: 1/1;
+  flex-grow: unset !important;
+}
+
+.hg-theme-default .hg-button[data-skbtn='.com'] {
+  font-size: 1.2rem;
+}
+
+.hg-theme-default .hg-button-space {
+  width: 400px;
+}
+
+.hg-row {
+  justify-content: center;
+  align-items: center;
+}
+/* Custom keyboard style */
