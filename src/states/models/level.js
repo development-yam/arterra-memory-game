@@ -1,7 +1,7 @@
 export const level = {
   state: {
     levels: [2, 4, 6, 8],
-    current: 8,
+    current: 2,
   },
   reducers: {
     reset(state) {

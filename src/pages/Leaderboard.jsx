@@ -137,7 +137,7 @@ const Leaderboard = () => {
         </div>
       )}
 
-      <Button type="submit" className="bg-[#EC4F54] rounded-none font-bold text-white w-[880px] h-[122px] absolute bottom-[108px] left-1/2 -translate-x-1/2" onClick={() => navigate('/')}>
+      <Button type="submit" className="bg-[#EC4F54] rounded-none font-bold text-white w-[880px] h-[122px] absolute bottom-[50px] left-1/2 -translate-x-1/2" onClick={() => navigate('/')}>
         Close
       </Button>
     </>

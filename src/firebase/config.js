@@ -7,12 +7,12 @@ import {
 } from 'firebase/firestore'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA6VP9ORszTVHAy8pW4ctI6hX31LGCx4p0",
-  authDomain: "bell-memory-game.firebaseapp.com",
-  projectId: "bell-memory-game",
-  storageBucket: "bell-memory-game.firebasestorage.app",
-  messagingSenderId: "427201280146",
-  appId: "1:427201280146:web:46da5a8c7981f5d2e28e4b"
+  apiKey: "AIzaSyCTvbqq8XgfEu3LWUn6tph6KFFvEHWTOA4",
+  authDomain: "arterra-games.firebaseapp.com",
+  projectId: "arterra-games",
+  storageBucket: "arterra-games.firebasestorage.app",
+  messagingSenderId: "149240267950",
+  appId: "1:149240267950:web:85af3ee161cd00aca0993f"
 }
 
 const app = initializeApp(firebaseConfig)
