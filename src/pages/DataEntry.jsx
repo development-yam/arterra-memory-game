@@ -290,7 +290,7 @@ const DataEntry = () => {
   return (
     <>
       <h2 className="text-[60px] mt-[50px] leading-[1.1] px-6 w-[880px] mx-auto text-white font-semibold text-center">
-        Win 2 Dwayne Gretzky tickets & a 1-night stay - enter now!
+      Win 2 Noah Reid tickets & a 1-night stay - enter now!
       </h2>
 
       {/* <div className="text-black text-center bg-gray-100 w-[690px] h-[150px] rounded mx-auto mt-10 flex justify-center items-center">
