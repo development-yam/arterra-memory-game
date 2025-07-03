@@ -79,12 +79,14 @@ const DataEntry = () => {
   const [showTermsModal, setShowTermsModal] = useState(false)
   const [showNewsletterModal, setShowNewsletterModal] = useState(false)
   const [termsAccepted, setTermsAccepted] = useState(false)
+  const [newsletterSubscribed, setNewsletterSubscribed] = useState(false)
 
   const { i18n, t } = useTranslation()
   const [keyLayoutName, setKeyLayoutName] = useState('default-' + i18n.language)
 
   const [formData, setFormData] = useState({ firstName: '', lastName: '', email: '' })
   const [emailError, setEmailError] = useState('')
+  const [termsError, setTermsError] = useState('')
 
   const navigate = useNavigate()
 
@@ -230,19 +232,26 @@ const DataEntry = () => {
         return
       }
 
+      if (!termsAccepted) {
+        setTermsError('Please accept the Terms and Conditions to continue.')
+        return
+      }
+
       setLoading(true)
 
       // Store full names in localStorage
       localStorage.setItem('firstName', formData.firstName);
       localStorage.setItem('lastName', formData.lastName);
       localStorage.setItem('email', formData.email);
+      localStorage.setItem('termsAccepted', termsAccepted);
+      localStorage.setItem('newsletterSubscribed', newsletterSubscribed);
       const language = i18n.language;
       localStorage.setItem('language', language);
 
       navigate('/instructions');
       setLoading(false);
     },
-    [navigate, formData, i18n.language]
+    [navigate, formData, i18n.language, termsAccepted, newsletterSubscribed]
   )
 
   const handleTermsCheckbox = (e) => {
@@ -255,11 +264,21 @@ const DataEntry = () => {
 
   const handleCloseTermsModal = () => {
     setTermsAccepted(true)
+    setTermsError('')
     setShowTermsModal(false)
   }
 
   const handleNewsletterClick = () => {
-    setShowNewsletterModal(true)
+    if (!newsletterSubscribed) {
+      setShowNewsletterModal(true)
+    } else {
+      setNewsletterSubscribed(false)
+    }
+  }
+
+  const handleCloseNewsletterModal = () => {
+    setNewsletterSubscribed(true)
+    setShowNewsletterModal(false)
   }
 
   const Modal = ({ isOpen, onClose, title, children, buttonText }) => {
@@ -349,17 +368,22 @@ const DataEntry = () => {
           )}
         </div>
 
-        <div className="w-full flex items-center gap-2 mb-[50px]">
-          <input
-            className="w-[60px] h-[60px] rounded-[30px]"
-            type="checkbox"
-            id="terms"
-            checked={termsAccepted}
-            onChange={handleTermsCheckbox}
-          />
-          <label className="w-[710px] text-[35px] font-bold leading-[1.2] cursor-pointer px-[30px]" htmlFor="terms">
-            Accept <span className="">Terms and Conditions</span>
-          </label>
+        <div className="w-full mb-[50px]">
+          <div className="flex items-center gap-2">
+            <input
+              className="w-[60px] h-[60px] rounded-[30px]"
+              type="checkbox"
+              id="terms"
+              checked={termsAccepted}
+              onChange={handleTermsCheckbox}
+            />
+            <label className="w-[710px] text-[35px] font-bold leading-[1.2] cursor-pointer px-[30px]" htmlFor="terms">
+              Accept <span className="">Terms and Conditions</span>
+            </label>
+          </div>
+          {termsError && (
+            <p className="text-red-500 text-[20px] mt-2 px-[90px]">{termsError}</p>
+          )}
         </div>
 
         <div className="w-full flex items-center gap-2 mb-[50px]">
@@ -367,6 +391,8 @@ const DataEntry = () => {
             className="w-[60px] h-[60px] rounded-[30px]"
             type="checkbox"
             id="newsletter"
+            checked={newsletterSubscribed}
+            onChange={handleNewsletterClick}
           />
           <div className="w-[710px] text-[35px] font-bold leading-[1.2] cursor-pointer px-[30px]" onClick={handleNewsletterClick}>
             <span className="underline">Sign up for the <br /> Great Estates Newsletter!</span>
@@ -552,7 +578,7 @@ responsibly.
 
       <Modal
         isOpen={showNewsletterModal}
-        onClose={() => setShowNewsletterModal(false)}
+        onClose={handleCloseNewsletterModal}
         title="Great Estates Newsletter"
         buttonText="Close"
       >

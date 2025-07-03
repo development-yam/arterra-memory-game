@@ -42,7 +42,7 @@ function Game() {
     timer.start(() => setScore((i) => i + 1))
   }, [timer])
 
-  const saveScoreToFirestore = async (level, firstName, lastName, score, language) => {
+  const saveScoreToFirestore = async (level, firstName, lastName, email, termsAccepted, newsletterSubscribed, score, language) => {
     const kioskId = localStorage.getItem('kiosk-id') || '';
     const id = uuidv4();
     const ref = doc(db, 'memory-game', 'scores', levelMap[level / 2 - 1], id);
@@ -50,6 +50,9 @@ function Game() {
       kioskId,
       firstName,
       lastName,
+      email,
+      termsAccepted,
+      newsletterSubscribed,
       score: Number(score),
       language,
       createdAt: Timestamp.now(),
@@ -64,10 +67,13 @@ function Game() {
     // Read user info from localStorage
     const firstName = localStorage.getItem('firstName') || '';
     const lastName = localStorage.getItem('lastName') || '';
+    const email = localStorage.getItem('email') || '';
+    const termsAccepted = localStorage.getItem('termsAccepted') || false;
+    const newsletterSubscribed = localStorage.getItem('newsletterSubscribed') || false;
     const language = localStorage.getItem('language') || 'en';
 
     // Save to Firestore
-    saveScoreToFirestore(current, firstName, lastName, score, language);
+    saveScoreToFirestore(current, firstName, lastName, email, termsAccepted, newsletterSubscribed, score, language);
 
     setTimeout(() => {
       navigate('/leaderboard')
