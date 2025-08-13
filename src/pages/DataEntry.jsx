@@ -309,7 +309,7 @@ const DataEntry = () => {
   return (
     <>
       <h2 className="text-[60px] mt-[50px] leading-[1.1] px-6 w-[880px] mx-auto text-white font-semibold text-center">
-      Win 2 Noah Reid tickets & a 1-night stay - enter now!
+      Win 2 Dwayne Gretzky tickets & a 1-night stay - enter now!
       </h2>
 
       {/* <div className="text-black text-center bg-gray-100 w-[690px] h-[150px] rounded mx-auto mt-10 flex justify-center items-center">
@@ -442,135 +442,43 @@ const DataEntry = () => {
         <div
           className="space-y-4 text-[30px]"
           dangerouslySetInnerHTML={{
-            __html: `Summer Giveaway Part 1
-<br />
-<br />
-Contest Rules &amp; Regulations (“Official Rules”)
-<br />
-<br />
-How to Enter: NO PURCHASE NECESSARY. No purchase or payment necessary to enter or win.
-Purchase will not improve an entrant&#39;s chance of winning. The Contest commences at 9:00am
-EST on June 20, 2025, and closes at 8:59pm EST on July 25, 2025.
-Enter by filling out the contest entry form
-at [https://www.greatestatesniagara.com/SummerGiveaway] or complete the digital form
-available on the digital kiosk located at Jackson-Triggs Niagara Estate. All entries must be
-submitted online no later than 8:59pm EST on July 25, 2025, THE CONTEST CLOSING DATE.
-Participation is limited to one (1) entry per person, per day, during the contest period,
-determined based on email address and phone number. Website tracking determines date and
-time of entry. If it is discovered that you attempted to enter more than once, all your entries
-will be void. Arterra Wines Canada, Inc. (the “Sponsor”), is not responsible for technical,
-hardware or software malfunctions, lost, delayed, or corrupted data transmission, line failures
-of any network or telephone, or inability to access the website.
-Eligibility:  This Contest is open to residents of the Province of Ontario, who are of legal
-drinking age or older in the Province of Ontario, except for directors, officers, employees, and
-contractors (and those with whom they are domiciled, and their immediate families, which
-includes spouse, sibling, parent and child) of the Sponsor, its agents or representatives, liquor
-licensees, or any distributor or company involved in any phase of Contest administration.
-Grand Prizes:   There are 5 grand prizes in total. Each “Grand Prize” to be won consists of:
- 2 tickets to the Noah Reid Concert on August 23, 2025, at the Jackson-Triggs
-Amphitheatre, a 1-night stay at a local hotel (5 winners). (The approximate retail value
-of each Grand Prize is $520 CAD.)
-The Grand Prizes must be accepted as awarded, are not transferable and are not redeemable
-for cash. All taxes, and other expenses not covered within the Grand Prize packages are the
-responsibility of the respective winner. The Sponsor reserves the right at any time to substitute
-the Grand Prize (or component thereof) for any reason, so long as a Grand Prize (or
-component) of comparable value are substituted.
-Winner Selection: On July 26, 2025, five (5) winners will be selected in a random draw at
-12:00pm EST in Toronto, Ontario from among all eligible entries received online. The random
-draw will be conducted by an independent judging organization whose decisions will be final
-and binding in all matters relating to this Contest. In order to be declared a winner, the selected
-entrant must have complied with these Official Rules and must correctly answer a time-limited
-mathematical, skill-testing question to be administered by mail, telephone or online without
-assistance of any kind and sign a Confirmation of Compliance with Rules Acceptance of Prize &amp;
-Release acknowledging and releasing Sponsor, Cire Communications Inc. (the “Contest
-Administrator”), any distributor or company involved in the supply of the Grand Prizes, or any
+            __html: `Great Estates Niagara
+Summer Giveaway Part 2
+Contest Rules & Regulations (“Official Rules”)
 
-component or any phase of contest administration, their respective officers, directors, agents,
-representatives, successors and assigns (collectively the “Released Parties”) from any liability
-(including, without limitation, any damages, losses or injury) in connection with this Contest,
-the awarding of the Grand Prizes and/or resulting from acceptance or use of the Grand Prizes
-(including any prize-related activity). The odds of winning depend upon the number of entries
-received. The selected entrants will be notified by telephone and electronic mail within two (2)
-days of the draw date. If a selected entrant cannot be contacted within 48 hours of selection, if
-there is a return of any Grand Prize or Secondary Prize notification as undeliverable, or if the
-selected entrant fails to comply with any of the foregoing, that selected entrant will be
-disqualified and an alternate entrant will be selected from among the remaining eligible entries.
-Winner must provide proof that they are of legal age to purchase alcohol products in the form
-of government issued photo ID.
+How to Enter: NO PURCHASE NECESSARY. No purchase or payment necessary to enter or win. Purchase will not improve an entrant's chance of winning. The Contest commences at 9:00am EST on July 26, 2025, and closes at 8:59pm EST on August 31, 2025. 
+
+Enter by filling out the contest entry form at [https://www.greatestatesniagara.com/SummerGiveaway] or complete the digital form available on the digital kiosk located at Jackson-Triggs Niagara Estate. All entries must be submitted online no later than 8:59pm EST on August 31, 2025, THE CONTEST CLOSING DATE. Participation is limited to one (1) entry per person, per day, during the contest period, determined based on email address and phone number. Website tracking determines date and time of entry. If it is discovered that you attempted to enter more than once, all your entries will be void. Arterra Wines Canada, Inc. (the “Sponsor”), is not responsible for technical, hardware or software malfunctions, lost, delayed, or corrupted data transmission, line failures of any network or telephone, or inability to access the website.
+
+Eligibility:  This Contest is open to residents of the Province of Ontario, who are of legal drinking age or older in the Province of Ontario, except for directors, officers, employees, and contractors (and those with whom they are domiciled, and their immediate families, which includes spouse, sibling, parent and child) of the Sponsor, its agents or representatives, liquor licensees, or any distributor or company involved in any phase of Contest administration.
+
+Grand Prizes:   There are 5 grand prizes in total. Each “Grand Prize” to be won consists of: 
+2 tickets to the Dwayne Gretzky Concert on September 12, 2025, at the Jackson-Triggs Amphitheatre. (The approximate retail value of each Grand Prize is $300 CAD.)
+The Grand Prizes must be accepted as awarded, are not transferable and are not redeemable for cash. All taxes, and other expenses not covered within the Grand Prize packages are the responsibility of the respective winner. The Sponsor reserves the right at any time to substitute the Grand Prize (or component thereof) for any reason, so long as a Grand Prize (or component) of comparable value are substituted.
+
+Winner Selection: On September 2, 2025, three (3) winners will be selected in a random draw at 12:00pm EST in Toronto, Ontario from among all eligible entries received online. The random draw will be conducted by an independent judging organization whose decisions will be final and binding in all matters relating to this Contest. In order to be declared a winner, the selected entrant must have complied with these Official Rules and must correctly answer a time-limited mathematical, skill-testing question to be administered by mail, telephone or online without assistance of any kind and sign a Confirmation of Compliance with Rules Acceptance of Prize & Release acknowledging and releasing Sponsor, Cire Communications Inc. (the “Contest Administrator”), any distributor or company involved in the supply of the Grand Prizes, or any component or any phase of contest administration, their respective officers, directors, agents, representatives, successors and assigns (collectively the “Released Parties”) from any liability (including, without limitation, any damages, losses or injury) in connection with this Contest, the awarding of the Grand Prizes and/or resulting from acceptance or use of the Grand Prizes (including any prize-related activity). The odds of winning depend upon the number of entries received. The selected entrants will be notified by telephone and electronic mail within two (2) days of the draw date. If a selected entrant cannot be contacted within 48 hours of selection, if there is a return of any Grand Prize or Secondary Prize notification as undeliverable, or if the selected entrant fails to comply with any of the foregoing, that selected entrant will be disqualified and an alternate entrant will be selected from among the remaining eligible entries. Winner must provide proof that they are of legal age to purchase alcohol products in the form of government issued photo ID.
+
 The entry dates and draw dates are as follows for all Grand Prizes:
-<br />
-<br />
- Entry period: June 20 th ,2025 at 9am EST –July 25 th ,2025 at 8:59pm EST
- Draw dates: July 26 th ,2025 at 12:00pm EST
+Entry period: July 26,2025 at 9am EST –August 31,2025 at 8:59pm EST
+Draw dates: September 2,2025 at 12:00pm EST 
 
-Miscellaneous: The Provincial liquor agencies are not connected with this Contest in any
-manner whatsoever and are not liable in any way whatsoever in regard to any matter that
-relates to this Contest.
-By accepting any of the Grand Prizes, the winners consent to the use of his/her name, address
-(city and Province), voice, statements and/or photograph, without further compensation or
-authorization, to be used for promotional purposes by the Sponsor or any related entities
-thereto in connection with this Contest. All information obtained from non-winning ballots will
-be used only to administer this Contest and for no other purpose. This Contest is subject to all
-relevant Canadian laws, is owned and operated by the Sponsor and administered by Cire
-Communications Inc. The Sponsor is not responsible for any printing errors or omissions and
-reserves the right to cancel or amend this Contest in the event of such errors or omissions.
+Miscellaneous: The Provincial liquor agencies are not connected with this Contest in any manner whatsoever and are not liable in any way whatsoever in regard to any matter that relates to this Contest.
+
+By accepting any of the Grand Prizes, the winners consent to the use of his/her name, address (city and Province), voice, statements and/or photograph, without further compensation or authorization, to be used for promotional purposes by the Sponsor or any related entities thereto in connection with this Contest. All information obtained from non-winning ballots will be used only to administer this Contest and for no other purpose. This Contest is subject to all relevant Canadian laws, is owned and operated by the Sponsor and administered by Cire Communications Inc. The Sponsor is not responsible for any printing errors or omissions and reserves the right to cancel or amend this Contest in the event of such errors or omissions.
+
 PRIVACY / USE OF PERSONAL INFORMATION.
-By participating in the Contest, each entrant: (i) grants to the Sponsors the right to use his/her
-personal information provided when he/she enters the Contest for the purpose of
-administering the Contest, including but not limited to contacting and announcing the winners
-and coordinating the provision of the Contest prize; (ii) acknowledges that the Sponsors may
-disclose his/her Personal Information to service providers of the Sponsors in connection with
-any of the activities listed in (i) above.
-Arterra Wines Canada, Inc. will use each entrant’s Personal Information only for identified
-purposes and protect each entrant’s Personal Information in a manner that is consistent with
-the Arterra Wines Canada, Inc. Privacy Policy at:
-https://www.greatestatesniagara.com/Legal/Privacy-Policy.
-By entering the Contest, each entrant agrees to release, indemnify and forever hold harmless
-the Released Parties from and against any and all claims, demands, damages, actions and
-<br />
-<br />
-causes of action arising or to arise by reason of the entrant’s participation in the Contest and/or
-the acceptance, use or misuse of the Grand Prizes or Secondary Prizes.
-Additionally, Instagram and its owner Meta Platforms, Inc. are also designated as Releasees.
-The Contest is in no way sponsored, endorsed or administered by, or associated with Instagram
-and/or its parent owner Meta Platforms, Inc. The Instagram Service is one of the Meta Products
-provided for use by Meta Platforms, Inc. Instagram and Meta Platforms, Inc. is completely
-released of all liability by each entrant or participant in this Contest. Any questions, comments
-or complaints regarding the Contest must be directed to the Sponsor and not Instagram or
-Meta Platforms, Inc. The Sponsor reserves the right to, without prior notice and at any time,
-terminate this Contest, in whole or in part, or modify this Contest in any way, should any factor
-interfere with its proper conduct as contemplated by these Official Rules and Regulations. The
-Sponsor is not responsible for lost, incomplete or illegible entries. ANY ATTEMPT BY AN
-ENTRANT TO DELIBERATELY DAMAGE THE WEBSITE OR UNDERMINE THE LEGITIMATE
-OPERATION OF THE CONTEST IS IN VIOLATION OF CRIMINAL AND CIVIL LAWS AND SHOULD
-SUCH AN ATTEMPT BE MADE, SPONSOR RESERVES THE RIGHT TO SEEK REMEDIES AND
-DAMAGES FROM ANY SUCH PERSON TO THE FULLEST EXTENT PERMITTED BY LAW, INCLUDING
-CRIMINAL PROSECUTION. Sponsor reserves the right, at its sole discretion, to disqualify any
-individual it finds, in its sole discretion, to be tampering with the entry process or the operation
-of this Contest or website; to be in violation of the terms of service of the website; to be acting
-in violation of these Official Rules; or to be acting in a non-sportsmanlike or disruptive manner,
-or with intent to annoy, abuse, threaten or harass any other person. Automated entries
-(including but not limited to entries submitted using any bot, script, macro or Contest service),
-copies, third-party entries, facsimiles and/or mechanical reproductions are not permitted and
-will be disqualified. In the event of multiple persons attempting to enter the Contest through
-one email account, the authorized account subscriber is deemed to be the natural person who
-is assigned an email address by an Internet access provider, online service provider or other
-organization, which is responsible for assigning email addresses or the domain associated with
-the submitted email address.
-<br />
-<br />
-Small Form –
-Mini -Rules &amp; Regs
-NO PURCHASE NECESSARY. Contest entry opens June 20, 2025, at 9:00 a.m. EST until July 25,
-2025, at 8:59 p.m. EST to legal residents of Ontario who have reached the age of majority in
-Ontario as of date of entry. There are 5 Grand Prizes to be won (5 winners), valued at $520 CAD
-each and consisting of: 2 tickets to the Noah Reid Concert on August 23, 2025 at the Jackson-
-Triggs Amphitheatre and a one-night stay at a local hotel. Odds depend on the total number of
-eligible entries received. Participation is limited to one (1) entry per person, per day, during the
-contest period. Name, address, age, telephone number, email address, and a correct answer
-to a math skill-test are required. Visit
-[https://www.greatestatesniagara.com/SummerGiveaway] for details. Please enjoy our wines
-responsibly.
+By participating in the Contest, each entrant: (i) grants to the Sponsors the right to use his/her personal information provided when he/she enters the Contest for the purpose of administering the Contest, including but not limited to contacting and announcing the winners and coordinating the provision of the Contest prize; (ii) acknowledges that the Sponsors may disclose his/her Personal Information to service providers of the Sponsors in connection with any of the activities listed in (i) above.
+Arterra Wines Canada, Inc. will use each entrant’s Personal Information only for identified purposes and protect each entrant’s Personal Information in a manner that is consistent with the Arterra Wines Canada, Inc. Privacy Policy at: https://www.greatestatesniagara.com/Legal/Privacy-Policy. 
+
+By entering the Contest, each entrant agrees to release, indemnify and forever hold harmless the Released Parties from and against any and all claims, demands, damages, actions and causes of action arising or to arise by reason of the entrant’s participation in the Contest and/or the acceptance, use or misuse of the Grand Prizes or Secondary Prizes.
+
+Additionally, Instagram and its owner Meta Platforms, Inc. are also designated as Releasees. The Contest is in no way sponsored, endorsed or administered by, or associated with Instagram and/or its parent owner Meta Platforms, Inc. The Instagram Service is one of the Meta Products provided for use by Meta Platforms, Inc. Instagram and Meta Platforms, Inc. is completely released of all liability by each entrant or participant in this Contest. Any questions, comments or complaints regarding the Contest must be directed to the Sponsor and not Instagram or Meta Platforms, Inc. The Sponsor reserves the right to, without prior notice and at any time, terminate this Contest, in whole or in part, or modify this Contest in any way, should any factor interfere with its proper conduct as contemplated by these Official Rules and Regulations. The Sponsor is not responsible for lost, incomplete or illegible entries. ANY ATTEMPT BY AN ENTRANT TO DELIBERATELY DAMAGE THE WEBSITE OR UNDERMINE THE LEGITIMATE OPERATION OF THE CONTEST IS IN VIOLATION OF CRIMINAL AND CIVIL LAWS AND SHOULD SUCH AN ATTEMPT BE MADE, SPONSOR RESERVES THE RIGHT TO SEEK REMEDIES AND DAMAGES FROM ANY SUCH PERSON TO THE FULLEST EXTENT PERMITTED BY LAW, INCLUDING CRIMINAL PROSECUTION. Sponsor reserves the right, at its sole discretion, to disqualify any individual it finds, in its sole discretion, to be tampering with the entry process or the operation of this Contest or website; to be in violation of the terms of service of the website; to be acting in violation of these Official Rules; or to be acting in a non-sportsmanlike or disruptive manner, or with intent to annoy, abuse, threaten or harass any other person. Automated entries (including but not limited to entries submitted using any bot, script, macro or Contest service), copies, third-party entries, facsimiles and/or mechanical reproductions are not permitted and will be disqualified. In the event of multiple persons attempting to enter the Contest through one email account, the authorized account subscriber is deemed to be the natural person who is assigned an email address by an Internet access provider, online service provider or other organization, which is responsible for assigning email addresses or the domain associated with the submitted email address.
+
+
+Small Form – 
+Mini -Rules & Regs
+NO PURCHASE NECESSARY.  Contest entry opens July 26, 2025, at 9:00 a.m. EST until August 31, 2025, at 8:59 p.m. EST to legal residents of Ontario who have reached the age of majority in Ontario as of date of entry. There are 3 Grand Prizes to be won (3 winners), valued at $300 CAD each and consisting of: 2 tickets to the Dwayne Gretzky Concert on September 12, 2025 at the Jackson-Triggs Amphitheatre. Odds depend on the total number of eligible entries received. Participation is limited to one (1) entry per person, per day, during the contest period.   Name, address, age, telephone number, email address, and a correct answer to a math skill-test are required. Visit [https://www.greatestatesniagara.com/SummerGiveaway] for details. Please enjoy our wines responsibly.
+
             `
           }}
         />
